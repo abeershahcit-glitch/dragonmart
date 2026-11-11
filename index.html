@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DRAGON MART — ہر چیز ایک جگہ</title>
+<style>
+:root{--ink:#182230;--muted:#657184;--brand:#e34b27;--brand2:#ff7a35;--bg:#f5f7fb;--card:#fff;--line:#e5e9f0;--green:#16845b}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,"Noto Sans Arabic",Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer;border:0}
+.top{background:#172337;color:#fff;text-align:center;padding:9px 12px;font-size:13px}.wrap{max-width:1180px;margin:auto;padding:0 18px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.head{display:flex;align-items:center;gap:18px;padding:16px 0}.logo{font-size:25px;font-weight:900;white-space:nowrap;color:var(--brand);letter-spacing:-1px}.logo span{color:#172337}.search{display:flex;flex:1;background:#f2f4f8;border:1px solid var(--line);border-radius:12px;overflow:hidden}.search input{width:100%;border:0;background:transparent;padding:13px;outline:none}.search button{background:var(--brand);color:white;padding:0 20px}.cartbtn{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-weight:bold}.nav{display:flex;gap:20px;overflow:auto;padding:0 0 13px;color:#586477;font-size:14px}.nav a{color:inherit;text-decoration:none;white-space:nowrap}.hero{margin:22px auto;background:linear-gradient(115deg,#172337,#263d5e 58%,#e34b27);color:white;border-radius:22px;padding:35px;display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:20px;overflow:hidden}.hero h1{font-size:clamp(27px,4vw,43px);line-height:1.25;margin:8px 0 12px}.hero p{color:#e3eaf4;line-height:1.8;max-width:580px}.pill{display:inline-block;background:#ffffff20;border:1px solid #ffffff30;border-radius:30px;padding:7px 12px;font-size:12px}.hero .cta{background:white;color:#172337;border-radius:10px;padding:12px 18px;font-weight:bold;margin-top:8px}.heroart{font-size:110px;text-align:center;filter:drop-shadow(0 15px 15px #0003)}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 auto 26px}.feature{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;gap:12px;align-items:center}.feature b{display:block;margin-bottom:5px}.feature small{color:var(--muted)}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:25px 0 14px}.sectionhead h2{font-size:23px;margin:0}.sectionhead p{color:var(--muted);margin:6px 0 0;font-size:13px}.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px 8px;text-align:center;transition:.15s}.cat:hover,.product:hover{transform:translateY(-2px);box-shadow:0 8px 22px #17233710}.cat .emoji{font-size:32px;display:block;margin-bottom:9px}.cat button{background:none;color:var(--ink);font-weight:bold}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.15s;display:flex;flex-direction:column}.pimg{height:155px;display:grid;place-items:center;font-size:64px;background:linear-gradient(135deg,#f7f8fc,#e8edf6);position:relative}.tag{position:absolute;top:10px;right:10px;background:#fff;color:var(--green);border-radius:7px;padding:5px 8px;font-size:11px;font-weight:bold}.pbody{padding:14px;display:flex;flex-direction:column;flex:1}.pbody h3{font-size:15px;margin:0 0 8px}.desc{font-size:12px;color:var(--muted);line-height:1.6;min-height:36px}.price{font-weight:900;font-size:19px;margin:12px 0}.old{font-size:12px;color:#98a1ae;text-decoration:line-through;margin-right:7px;font-weight:normal}.add{background:var(--brand);color:#fff;border-radius:9px;padding:10px;font-weight:bold;margin-top:auto}.add:hover{background:#c83b1c}.banner{margin:28px 0;background:#fff3eb;border:1px solid #ffddcc;border-radius:17px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:15px}.banner h3{margin:0 0 7px}.banner p{margin:0;color:var(--muted);font-size:13px}.banner button{background:var(--brand);color:#fff;border-radius:9px;padding:11px 15px}.notice{background:#fff8d9;border:1px solid #f3df8a;padding:13px 15px;border-radius:12px;font-size:13px;line-height:1.7;margin:20px 0;color:#6b5712}.newsletter{background:#172337;color:#fff;border-radius:18px;padding:25px;margin:28px 0;display:flex;justify-content:space-between;gap:20px;align-items:center}.newsletter p{color:#d1d9e6;font-size:13px}.newsletter form{display:flex;gap:8px}.newsletter input{border:0;border-radius:9px;padding:12px;min-width:200px}.newsletter button{background:var(--brand);color:white;border-radius:9px;padding:12px 15px}footer{background:#fff;border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px;line-height:1.8}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}.footgrid h4{color:var(--ink);margin:0 0 8px}.footgrid a{display:block;color:var(--muted);text-decoration:none}.copy{text-align:center;border-top:1px solid var(--line);margin-top:20px;padding-top:15px}.overlay{position:fixed;inset:0;background:#11182770;z-index:10;display:none;justify-content:flex-end}.overlay.show{display:flex}.drawer{width:min(440px,100%);height:100%;background:#fff;padding:20px;overflow:auto}.drawerhead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px}.x{background:#eef1f6;border-radius:8px;padding:8px 11px}.cartitem{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}.cartemoji{font-size:30px;background:#f1f4f9;padding:10px;border-radius:10px}.cartitem div:nth-child(2){flex:1}.cartitem small{color:var(--muted)}.qty{display:flex;align-items:center;gap:8px;margin-top:6px}.qty button{background:#eef1f6;border-radius:6px;padding:4px 9px}.total{display:flex;justify-content:space-between;font-weight:bold;font-size:18px;margin:18px 0}.checkout{display:grid;gap:10px}.checkout input,.checkout textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:12px}.checkout textarea{min-height:75px}.checkout .add{padding:13px}.empty{text-align:center;padding:40px 10px;color:var(--muted)}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#172337;color:#fff;border-radius:10px;padding:12px 18px;z-index:20;display:none;max-width:90%;text-align:center}.toast.show{display:block}
+@media(max-width:850px){.products{grid-template-columns:repeat(3,1fr)}.cats{grid-template-columns:repeat(3,1fr)}.hero{padding:25px}.heroart{font-size:75px}.head{flex-wrap:wrap}.search{order:3;flex-basis:100%}.features{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr}.footgrid>div:first-child{grid-column:1/-1}}
+@media(max-width:520px){.wrap{padding:0 12px}.hero{grid-template-columns:1fr;padding:22px}.heroart{display:none}.hero h1{font-size:29px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pimg{height:120px;font-size:50px}.pbody{padding:11px}.pbody h3{font-size:13px}.price{font-size:17px}.cats{gap:8px}.cat{padding:14px 4px}.sectionhead h2{font-size:19px}.banner,.newsletter{align-items:flex-start;flex-direction:column}.newsletter form{width:100%}.newsletter input{min-width:0;flex:1;width:100%}.footgrid{grid-template-columns:1fr}.footgrid>div:first-child{grid-column:auto}.cartbtn{margin-right:auto}}
+</style>
+</head>
+<body>
+<div class="top">🚚 منتخب آرڈرز پر ڈیلیوری دستیاب — آرڈر کرنے سے پہلے تفصیلات کی تصدیق کریں</div>
+<header><div class="wrap">
+ <div class="head">
+  <div class="logo">DRAGON <span>MART</span></div>
+  <div class="search"><input id="search" placeholder="پروڈکٹ تلاش کریں..." aria-label="پروڈکٹ تلاش کریں"><button onclick="renderProducts()">تلاش</button></div>
+  <button class="cartbtn" onclick="openCart()">🛒 کارٹ <span id="cartCount">0</span></button>
+ </div>
+ <nav class="nav"><a href="#home">ہوم</a><a href="#categories">کیٹیگریز</a><a href="#products">تمام پروڈکٹس</a><a href="#about">ہمارے بارے میں</a><a href="#contact">رابطہ</a></nav>
+</div></header>
+<main class="wrap" id="home">
+ <section class="hero">
+  <div><span class="pill">آپ کی اپنی آن لائن مارکیٹ</span><h1>ہر چیز ایک جگہ،<br>خریداری آسان!</h1><p>فیشن سے لے کر ٹیکنالوجی اور گھر کے سامان تک، اپنی پسند کی چیز تلاش کریں۔ آسان آرڈر، واضح قیمت اور کسٹمر سپورٹ۔</p><button class="cta" onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">ابھی خریداری کریں　←</button></div>
+  <div class="heroart">🛍️📦</div>
+ </section>
+ <section class="features">
+  <div class="feature"><span style="font-size:28px">📦</span><div><b>آسان آرڈر</b><small>اپنی پسند کی چیز کارٹ میں شامل کریں</small></div></div>
+  <div class="feature"><span style="font-size:28px">🤝</span><div><b>کسٹمر سپورٹ</b><small>آرڈر کی تفصیلات کی تصدیق</small></div></div>
+  <div class="feature"><span style="font-size:28px">🔒</span><div><b>محفوظ معلومات</b><small>آرڈر سے پہلے قیمت اور ڈیلیوری معلوم کریں</small></div></div>
+ </section>
+ <section id="categories"><div class="sectionhead"><div><h2>کیٹیگریز</h2><p>اپنی پسند کا شعبہ منتخب کریں</p></div></div>
+ <div class="cats" id="cats"></div></section>
+ <section id="products"><div class="sectionhead"><div><h2>مشہور پروڈکٹس</h2><p>نمونہ پروڈکٹس — اصل قیمت اور دستیابی سپلائر سے تصدیق کریں</p></div><span id="resultCount" style="color:var(--muted);font-size:13px"></span></div>
+ <div class="products" id="productGrid"></div></section>
+ <div class="banner"><div><h3>اپنی ضرورت کی چیز نہیں ملی؟</h3><p>سپلائر کی نئی پروڈکٹس شامل ہونے پر یہ کیٹلاگ اپ ڈیٹ کیا جا سکتا ہے۔</p></div><button onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">رابطہ کریں</button></div>
+ <div class="notice"><b>اہم نوٹ:</b> یہ DRAGON MART کا ابتدائی ورژن ہے۔ اس میں دکھائی گئی پروڈکٹس، قیمتیں اور ڈسکاؤنٹ صرف مثال کے لیے ہیں۔ Database کنکشن مکمل ہونے پر آرڈرز محفوظ ہوں گے۔ ابھی یہ خودکار ملٹی سیلر یا سپلائر شپنگ سسٹم نہیں ہے۔</div>
+ <section class="newsletter" id="about"><div><h3>DRAGON MART کے ساتھ خریداری شروع کریں</h3><p>کسی بھی آرڈر سے پہلے سپلائر سے اسٹاک، قیمت اور واپسی کی پالیسی کی تصدیق کریں۔</p></div><form onsubmit="event.preventDefault();toast('شکریہ! یہ ڈیمو فارم ہے، سبسکرپشن محفوظ نہیں کی گئی۔')"><input type="email" placeholder="آپ کا ای میل (اختیاری)"><button>اپ ڈیٹس</button></form></section>
+</main>
+<footer id="contact"><div class="wrap"><div class="footgrid"><div><div class="logo">DRAGON <span>MART</span></div><p>تمام قسم کی پروڈکٹس کے لیے آپ کی آن لائن شاپنگ منزل۔<br>یہ ڈیمو ہے؛ اصل کاروبار کے لیے رابطہ اور آرڈر سسٹم سیٹ اپ کرنا ہوگا۔</p></div><div><h4>خریداری</h4><a href="#categories">کیٹیگریز</a><a href="#products">تمام پروڈکٹس</a><a href="#home">واپس اوپر</a></div><div><h4>کسٹمر سروس</h4><a href="#contact" onclick="toast('اپنا اصل WhatsApp نمبر ویب سائٹ میں شامل کرنا باقی ہے۔')">WhatsApp سپورٹ</a><a href="#contact" onclick="toast('ریٹرن پالیسی سپلائر سے طے کرکے یہاں شامل کریں۔')">ریٹرن پالیسی</a><a href="#contact" onclick="toast('ڈیلیوری کی مدت سپلائر سے تصدیق کریں۔')">ڈیلیوری معلومات</a></div></div><div class="copy">© 2026 DRAGON MART · ڈیمو ویب سائٹ</div></div></footer>
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeCart()"><aside class="drawer"><div class="drawerhead"><h2 style="margin:0">آپ کی کارٹ</h2><button class="x" onclick="closeCart()">✕</button></div><div id="cartItems"></div><div id="checkoutArea"></div></aside></div><div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = "PASTE_YOUR_PROJECT_URL_HERE";
+const SUPABASE_PUBLISHABLE_KEY = "PASTE_YOUR_PUBLISHABLE_KEY_HERE";
+const supabaseReady = !!(window.supabase && SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("PASTE_") && !SUPABASE_PUBLISHABLE_KEY.includes("PASTE_"));
+const db = supabaseReady ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
+const categories=[['تمام','🛍️'],['فیشن','👕'],['الیکٹرانکس','🎧'],['موبائل ایکسیسریز','📱'],['جوتے','👟'],['گھر و کچن','🏠'],['بیوٹی','🧴'],['کھلونے','🧸']];
+let products=[
+{id:1,name:'کلاسک کیژول شرٹ',cat:'فیشن',price:1499,old:1999,emoji:'👕',desc:'روزمرہ استعمال کے لیے آرام دہ شرٹ'},
+{id:2,name:'وائرلیس ہیڈفون',cat:'الیکٹرانکس',price:2499,old:3299,emoji:'🎧',desc:'موسیقی اور کالز کے لیے'},
+{id:3,name:'فاسٹ چارجنگ کیبل',cat:'موبائل ایکسیسریز',price:499,old:699,emoji:'🔌',desc:'روزمرہ چارجنگ کے لیے کیبل'},
+{id:4,name:'اسپورٹس اسنیکرز',cat:'جوتے',price:2899,old:3599,emoji:'👟',desc:'کیژول اور اسپورٹس اسٹائل'},
+{id:5,name:'واٹر بوتل',cat:'گھر و کچن',price:699,old:899,emoji:'🥤',desc:'روزانہ ساتھ رکھنے کے لیے'},
+{id:6,name:'اسکن کیئر سیٹ',cat:'بیوٹی',price:1799,old:2199,emoji:'🧴',desc:'روزمرہ نگہداشت کے لیے'},
+{id:7,name:'بلوٹوتھ اسپیکر',cat:'الیکٹرانکس',price:1999,old:2599,emoji:'🔊',desc:'کمپیکٹ ڈیزائن، آسان استعمال'},
+{id:8,name:'موبائل اسٹینڈ',cat:'موبائل ایکسیسریز',price:399,old:599,emoji:'📱',desc:'ویڈیوز دیکھنے کے لیے اسٹینڈ'},
+{id:9,name:'بچوں کا بلڈنگ سیٹ',cat:'کھلونے',price:1199,old:1499,emoji:'🧸',desc:'تخلیقی کھیل کے لیے'},
+{id:10,name:'کچن آرگنائزر',cat:'گھر و کچن',price:899,old:1199,emoji:'🧺',desc:'گھر میں چیزیں ترتیب سے رکھیں'},
+{id:11,name:'کیپ اور سن گلاسز',cat:'فیشن',price:999,old:1399,emoji:'🧢',desc:'کیژول اسٹائل کے لیے'},
+{id:12,name:'والٹ',cat:'فیشن',price:799,old:1099,emoji:'👛',desc:'روزمرہ استعمال کا والٹ'}
+];
+let activeCat='تمام',cart={};
+const fmt=n=>'Rs. '+Number(n).toLocaleString('en-PK');
+function renderCats(){document.getElementById('cats').innerHTML=categories.slice(1).map(([c,e])=>`<div class="cat"><span class="emoji">${e}</span><button onclick="filterCat('${c}')">${c}</button></div>`).join('')+`<div class="cat"><span class="emoji">🛍️</span><button onclick="filterCat('تمام')">تمام پروڈکٹس</button></div>`}
+function renderProducts(){const q=document.getElementById('search').value.trim().toLowerCase();let list=products.filter(p=>(activeCat==='تمام'||p.cat===activeCat)&&(!q||(p.name+' '+p.cat+' '+p.desc).toLowerCase().includes(q)));document.getElementById('resultCount').textContent=list.length+' پروڈکٹس';document.getElementById('productGrid').innerHTML=list.length?list.map(p=>`<article class="product"><div class="pimg"><span>${p.emoji}</span><span class="tag">نمونہ</span></div><div class="pbody"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">${fmt(p.price)} <span class="old">${fmt(p.old)}</span></div><button class="add" onclick="addCart(${p.id})">کارٹ میں شامل کریں ＋</button></div></article>`).join(''):'<div class="empty" style="grid-column:1/-1">کوئی پروڈکٹ نہیں ملی۔ دوسری چیز تلاش کریں۔</div>'}
+function filterCat(c){activeCat=c;document.getElementById('search').value='';renderProducts();document.querySelector('#products').scrollIntoView({behavior:'smooth'})}
+document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')renderProducts()});
+function addCart(id){cart[id]=(cart[id]||0)+1;updateCartCount();toast('پروڈکٹ کارٹ میں شامل ہوگئی')}
+function updateCartCount(){document.getElementById('cartCount').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
+function openCart(){document.getElementById('overlay').classList.add('show');renderCart()}
+function closeCart(){document.getElementById('overlay').classList.remove('show')}
+function changeQty(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];updateCartCount();renderCart()}
+function renderCart(){let ids=Object.keys(cart);const box=document.getElementById('cartItems'),area=document.getElementById('checkoutArea');if(!ids.length){box.innerHTML='<div class="empty"><div style="font-size:48px">🛒</div><p>آپ کی کارٹ ابھی خالی ہے۔</p></div>';area.innerHTML='';return}
+box.innerHTML=ids.map(id=>{let p=products.find(x=>x.id==id);return `<div class="cartitem"><div class="cartemoji">${p.emoji}</div><div><b>${p.name}</b><br><small>${fmt(p.price)} فی عدد</small><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><span>${cart[id]}</span><button onclick="changeQty(${p.id},1)">+</button></div></div><b>${fmt(p.price*cart[id])}</b></div>`}).join('');
+let total=ids.reduce((s,id)=>s+products.find(p=>p.id==id).price*cart[id],0);
+area.innerHTML=`<div class="total"><span>کل (ڈیلیوری کے بغیر)</span><span>${fmt(total)}</span></div><form class="checkout" onsubmit="placeOrder(event)"><h3>آرڈر کی تفصیلات</h3><input id="custName" required placeholder="آپ کا پورا نام"><input id="custPhone" required type="tel" placeholder="موبائل نمبر"><textarea id="custAddress" required placeholder="مکمل پتہ، شہر سمیت"></textarea><textarea id="custNotes" placeholder="اضافی ہدایات (اختیاری)"></textarea><button class="add">آرڈر کی تفصیل تیار کریں</button><small style="color:var(--muted);line-height:1.6">یہ ڈیمو آپ کی تفصیلات کسی سرور پر نہیں بھیجتا۔ یہ آرڈر کا متن تیار کرے گا جسے آپ سپلائر کو خود بھیج سکتے ہیں۔</small></form>`;
+}
+function placeOrder(e){e.preventDefault();let ids=Object.keys(cart),total=ids.reduce((s,id)=>s+products.find(p=>p.id==id).price*cart[id],0);let lines=ids.map(id=>{let p=products.find(x=>x.id==id);return `- ${p.name} × ${cart[id]} = ${fmt(p.price*cart[id])}`}).join('\n');let msg=`DRAGON MART — نیا آرڈر\nنام: ${document.getElementById('custName').value}\nفون: ${document.getElementById('custPhone').value}\nپتہ: ${document.getElementById('custAddress').value}\nپروڈکٹس:\n${lines}\nکل (ڈیلیوری کے بغیر): ${fmt(total)}\nنوٹ: ${document.getElementById('custNotes').value||'کوئی نہیں'}\nبراہ کرم اسٹاک، ڈیلیوری چارجز اور حتمی رقم کی تصدیق کریں۔`;document.getElementById('checkoutArea').innerHTML=`<div class="notice">آپ کا آرڈر ٹیکسٹ تیار ہے۔ اسے کاپی کرکے اپنے سپلائر کو بھیجیں۔ ابھی یہ آرڈر خودکار طور پر سپلائر کو نہیں جاتا۔</div><textarea id="orderText" style="width:100%;min-height:220px;padding:12px;border:1px solid var(--line);border-radius:10px">${msg.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</textarea><button class="add" style="width:100%;margin-top:10px" onclick="copyOrder()">آرڈر کاپی کریں</button>`}
+function copyOrder(){let t=document.getElementById('orderText');t.select();try{document.execCommand('copy');toast('آرڈر کا متن کاپی ہوگیا۔ اب سپلائر کو بھیجیں۔')}catch(e){toast('متن منتخب ہوگیا؛ اسے کاپی کریں۔')}}
+let toastTimer;function toast(s){let t=document.getElementById('toast');t.textContent=s;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2600)}
+
+async function loadProductsFromDatabase(){
+  if(!db) return;
+  try{
+    const {data,error}=await db.from('products').select('*').eq('active',true).order('id');
+    if(error) throw error;
+    if(data && data.length){
+      products=data.map(p=>({id:p.id,name:p.name,cat:p.category,price:Number(p.price),old:Number(p.old_price||p.price),emoji:p.emoji||'📦',desc:p.description||''}));
+      renderProducts();
+    }
+  }catch(err){console.warn('DRAGON MART products database:',err.message);}
+}
+const originalPlaceOrder=placeOrder;
+async function placeOrder(e){
+  e.preventDefault();
+  if(!db){ originalPlaceOrder(e); return; }
+  const ids=Object.keys(cart);
+  const items=ids.map(id=>{const p=products.find(x=>x.id==id);return {product_id:p.id,name:p.name,price:Number(p.price),quantity:cart[id],emoji:p.emoji};});
+  const total=items.reduce((sum,item)=>sum+item.price*item.quantity,0);
+  const payload={
+    customer_name:document.getElementById('custName').value.trim(),
+    customer_phone:document.getElementById('custPhone').value.trim(),
+    customer_address:document.getElementById('custAddress').value.trim(),
+    customer_notes:document.getElementById('custNotes').value.trim(),
+    items:items,total:total,status:'new'
+  };
+  const btn=e.submitter;
+  if(btn){btn.disabled=true;btn.textContent='آرڈر محفوظ ہو رہا ہے...';}
+  try{
+    const {error}=await db.from('orders').insert(payload);
+    if(error) throw error;
+    document.getElementById('checkoutArea').innerHTML='<div class="notice">آپ کا آرڈر کامیابی سے موصول ہوگیا ہے۔ DRAGON MART ٹیم جلد رابطہ کرے گی۔</div>';
+    cart={};updateCartCount();
+  }catch(err){
+    console.error(err);
+    if(btn){btn.disabled=false;btn.textContent='آرڈر کی تفصیل تیار کریں';}
+    toast('آرڈر محفوظ نہیں ہو سکا۔ دوبارہ کوشش کریں یا بعد میں رابطہ کریں۔');
+  }
+}
+renderCats();renderProducts();loadProductsFromDatabase();
+
+</script>
+</body></html>
